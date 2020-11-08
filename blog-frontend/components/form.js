@@ -18,8 +18,8 @@ export default function Form({ _id }) {
         body: JSON.stringify(data),
         type: 'application/json',
       });
-      setIsSubmitting(false)
-      setHasSubmitted(true)
+      setIsSubmitting(false);
+      setHasSubmitted(true);
     } catch (err) {
       setFormData(err);
     }
