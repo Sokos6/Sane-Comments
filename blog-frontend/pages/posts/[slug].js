@@ -12,6 +12,7 @@ import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
 import Comments from '../../components/comments';
+import Form from '../../components/form';
 
 export default function Post({ post, comments, morePosts, preview }) {
   const router = useRouter()

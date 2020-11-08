@@ -1,7 +1,5 @@
 import Date from './date';
 
-import Date from './date';
-
 export default function Comments({ comments = [] }) {
   return (
     <>
