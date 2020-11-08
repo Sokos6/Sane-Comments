@@ -11,6 +11,7 @@ import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
+import Comments from '../../components/comments';
 
 export default function Post({ post, comments, morePosts, preview }) {
   const router = useRouter()
@@ -40,6 +41,7 @@ export default function Post({ post, comments, morePosts, preview }) {
               />
               <PostBody content={post.body} />
             </article>
+            <Comments comments={post?.comments} />
             <SectionSeparator />
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           </>
